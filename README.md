@@ -88,6 +88,8 @@ USE Sales;
 
 ---
  ## Author
+ 
 **Sumith Poojary**
+
 GitHub: [sumith999](https://github.com/sumith999)
 
