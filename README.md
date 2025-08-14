@@ -15,19 +15,21 @@ The goal is to create, modify, and query views to simplify complex queries and p
 
 ## Views Created
 
-1. **CustomerOrdersView**
+1. **CustomerOrdersView** -
 Displays customer details along with the orders they have placed.
 
-Query:
+## Query:
+```sql
 CREATE VIEW CustomerOrdersView AS
 SELECT c.CustomerID, c.CustomerName, c.Country,
        o.ProductName, o.OrderDate, o.Price, o.Quantity
 FROM Customers c
 INNER JOIN Orders o ON c.CustomerID = o.CustomerID;
+```
 
 ---
 
-2. **HighValueOrdersView**
+2. **HighValueOrdersView** -
 Shows orders where the Price is greater than 20,000.
 
 ## Query:
@@ -41,7 +43,7 @@ WHERE o.Price > 20000;
 
 ---
 
-3. **CountryWiseCustomersView**
+3. **CountryWiseCustomersView** - 
 Groups customers by country and shows the total count per country.
 
 ## Query:
@@ -86,6 +88,6 @@ USE Sales;
 
 ---
  ## Author
-Sumith Poojary
+**Sumith Poojary**
 GitHub: [sumith999](https://github.com/sumith999)
 
